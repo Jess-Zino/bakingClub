@@ -1,0 +1,99 @@
+/*2d292a*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("ORFEYW0.jpg") rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    width: 90vw;
+}
+.left{
+    flex:1;
+    
+}
+.left img {
+    width:100%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+
+    height: 95vh;
+}
+form{
+    flex: 2.1;
+    background-color: #2d292acc;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    padding:5px 20px;
+    font-family: "poppins";
+    gap:15px;
+    color: white;
+
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10vw,1fr));
+}
+input[type="text"] , input[type="email"], input[type="number"], input[type="date"]{
+    width: 17vw;
+    height: 4vh;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: "poppins";
+    border-bottom: 2px solid white;
+}
+input[type="submit"] {
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 15px;
+    background-color: white;
+    color: #2d292a;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: "poppins";
+    font-weight: 500;
+}
+select{
+    font-family: "poppins";
+    width: 17vw;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 4vh;
+    color: white;
+
+}
+option{
+    color: black;
+}
+textarea{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 8vh;
+}
+.formitem {
+    display: flex;
+    flex-direction: column;
+}
