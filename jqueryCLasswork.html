@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.7.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            font-family: "poppins";
+            overflow: hidden;
+            height: 100vh;
+        }
+        #btn{
+            background-color: green;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            margin-top: 500px;
+            border-radius: 10px;
+            color: white;
+        
+        }
+        #content{
+            width: 50vw;
+            height:50vh;
+            content:" ";
+            background-color:royalblue;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+   <div id="btn">
+        Reveal
+   </div>
+   <div id="content" >
+   </div>
+   <ul>
+    
+   </ul>
+    <script>
+        
+        $(window).ready(function(){
+
+           $("#btn").on({
+            
+            click:function (){
+
+               $("#content").css("background", "purple")
+
+            },
+            mouseover:function (){
+                $("#content").css("background", "purple")
+
+            },
+            mouseleave:function (){
+                $("#content").css("background", "royalblue")
+
+            }
+        }
+           )
+        })
+    </script>
+</body>
+</html>
